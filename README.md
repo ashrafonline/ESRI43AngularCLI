@@ -1,31 +1,13 @@
-# ESRI43AngularCLI
+# Live
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0-rc.2.
+[Github Pages link](https://ashrafonline.github.io/ESRI43AngularCLI/)
 
-## Development server
+# Concept 
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+In this repository , I'm giving an example in how we can use ArcGIS JS API 4.3 inside the lovely AngularCLI .
 
-## Code scaffolding
+I'm using [@tomwayson](https://github.com/tomwayson) modules : 
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class/module`.
+[esri-loader](https://github.com/tomwayson/esri-loader) AND [angular2-esri-loader](https://github.com/tomwayson/angular2-esri-loader)
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
-"# ESRI43AngularCLI" 
-"# ESRI43AngularCLI" 
-"# ESRI43AngularCLI" 
+Currently , I'm focusing on three types of services : MapImageLayer,TileLayer and FeatureLayer . But the component is flexable and could be extended easily .
