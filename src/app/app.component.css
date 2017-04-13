@@ -1,0 +1,5 @@
+.dropdown-menu li{
+    padding: 5px;
+    width:200px;
+    border-bottom: 1px solid #ccc
+}

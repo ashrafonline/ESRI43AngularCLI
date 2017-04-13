@@ -1,0 +1,25 @@
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <a href="../" class="navbar-brand">ArcGIS API for JavaScript 4.3 & AngularCLI</a>
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+    </div>
+    <div class="navbar-collapse collapse" id="navbar-main">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown" [class.open]="isMenuOpen">
+          <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false" (click)="isMenuOpen=isMenuOpen ? false:true">Layers <span class="caret"></span></a>
+          <ul class="dropdown-menu" aria-labelledby="themes">
+            <li *ngFor="let layer of layersList">
+              <input type="checkbox" [checked]="layer.config.visible==false ? false : true" (click)="changeLayerVisibility(layer.config.id,$event)">&nbsp;{{layer.label}}
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<app-esri (onMapLoaded)="adviseMapLoaded($event)"></app-esri>
